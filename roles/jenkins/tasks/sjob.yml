@@ -1,12 +1,13 @@
-- name: Copy Config File - {{ item.job_name }}
+- name: Copy sjob config file
   ansible.builtin.template:
     src: sjob.xml
     dest: /tmp/sjob.xml
 
-- name: Create Job - {{ item.job_name }}
+
+- name: Create a single pipeline branch in jenkins - {{items.job_name}}
   community.general.jenkins_job:
-      config: "{{ lookup('file', 'templates/sjob.xml') }}"
-      name: "{{item.folder_name}}/{ { item.job_name } }"
-      password: admin
-      url: http://44.212.39.222:8080
-      user: admin
+    config: "{{ lookup('file', '/tmp/sjob.xml') }}"
+    name: "{{items.job_name}}"
+    password: admin
+    url: http://172.31.85.67:8080
+    user: admin

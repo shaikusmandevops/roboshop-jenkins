@@ -2,7 +2,6 @@
 <org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@756.v891d88f2cd46">
     <actions/>
     <description></description>
-    <displayName>mjob</displayName>
     <properties/>
     <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.1135.v8de8e7899051">
         <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
@@ -23,8 +22,8 @@
         <data>
             <jenkins.branch.BranchSource>
                 <source class="jenkins.plugins.git.GitSCMSource" plugin="git@5.2.1">
-                    <id>d9140cdd-104d-40af-a1d6-e93f02b08c77</id>
-                    <remote>{{ item.repo_name }}</remote>
+                    <id>5f6eeab6-7713-4fc1-96e7-3d1204db4b09</id>
+                    <remote>loop: {{ item.repo_name }} </remote>
                     <credentialsId></credentialsId>
                     <traits>
                         <jenkins.plugins.git.traits.BranchDiscoveryTrait/>
