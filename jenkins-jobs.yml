@@ -6,6 +6,6 @@
     folders:
       - {folder_name: "CI_Pipeline"}
     mjobs:
-      - {job_name: "cart" , repo_name: "https://github.com/shaikusmandevops/cart.git", folder_name: "CI_Pipeline" }
+      - {job_name: "cart" , repo_name: "https://github.com/shaikusmandevops/cart", folder_name: "CI_Pipeline" }
     sjobs:
-      - { job_name: "roboshop-terraform", repo_name: "https://github.com/shaikusmandevops/aws-terraform.git", folder_name: "CI_Pipeline"}
+      - { job_name: "roboshop-terraform", repo_name: "https://github.com/shaikusmandevops/aws-terraform", folder_name: "CI_Pipeline"}
