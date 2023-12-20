@@ -3,10 +3,10 @@
     src: folder.xml
     dest: /tmp/folder.xml
 
-- name: Create a folder in jenkins - {{items.folder_name}}
+- name: Create a folder in jenkins - {{item.folder_name}}
   community.general.jenkins_job:
     config: "{{ lookup('file', '/tmp/folder.xml') }}"
-    name: "{{items.folder_name}}"
+    name: "{{item.folder_name}}"
     password: admin
     url: http://18.209.167.115:8080/
     user: admin
