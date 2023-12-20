@@ -8,5 +8,5 @@
     config: "{{ lookup('file', '/tmp/folder.xml') }}"
     name: "{{items.folder_name}}"
     password: admin
-    url: http://18.209.167.115:8080
+    url: http://18.209.167.115:8080/
     user: admin
