@@ -1,8 +1,8 @@
--name: create jenkins jobs
- hosts: localhost
- roles:
-   - jenkins
- vars:
+- name: Create Jenkins Jobs
+  hosts: localhost
+  roles:
+    - jenkins
+  vars:
    mjobs:
     - {job_name:"cart", repo_name:"https://github.com/shaikusmandevops/roboshop-jenkins.git" }
    sjobs:
