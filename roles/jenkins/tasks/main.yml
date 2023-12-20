@@ -6,9 +6,9 @@
 - name: create single pipeline job - {{item.job_name}}
   ansible.builtin.include_tasks:
       file: sjob.yml
-  loop: "{{ sjob }}"
+  loop: "{{ sjobs }}"
 
 - name: create multi pipeline job - {{item.job_name}}
   ansible.builtin.include_tasks:
       file: mjob.yml
-  loop: "{{ mjob }}"
+  loop: "{{ mjobs }}"
