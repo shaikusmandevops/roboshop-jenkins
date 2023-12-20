@@ -1,5 +1,5 @@
 -create: copy config file - {{ item.job_name }}
-  ansible.builtin.templates:
+  ansible.builtin.template:
   src: sjob.xml
   dest: /tmp/sjob.xml
 
