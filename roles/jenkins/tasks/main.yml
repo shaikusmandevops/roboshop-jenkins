@@ -1,8 +1,8 @@
 - name: Create multi branch pipeline jobs
   ansible.builtin.include_tasks:
-    file: mjob.yaml
+    file: mjob.yml
     loop: "{{ mjobs }}"
 - name: Create singlebranch pipeline jobs
   ansible.builtin.include_tasks:
-    file: sjob.yaml
+    file: sjob.yml
     loop: "{{ sjobs }}"
