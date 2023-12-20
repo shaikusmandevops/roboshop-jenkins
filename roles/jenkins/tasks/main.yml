@@ -1,6 +1,7 @@
 - name: create folder - {{item.folder}}
   ansible.builtin.include_tasks:
       file: folder.yml
+  loop: "{{ folders }}"
 
 - name: create single pipeline job - {{item.job_name}}
   ansible.builtin.include_tasks:
